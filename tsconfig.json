@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es2015", "dom"],
+    "declaration": true,
+    "declarationDir": "dist",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmitOnError": true, //stop ts from build js code when error occurs
+    "sourceMap": true, //map ts to js for debuging process
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "esModuleInterop": true,
+    "noUnusedParameters": false,
+    "noUnusedLocals": false,
+    "resolveJsonModule": true
+  },
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/browser.ts",
+    "playground/src/@stellar",
+    "documentation/src/docs.json",
+    "src/fixtures"
+  ]
+}
